@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 3, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"","debugId":null}},
+    {"offset": {"line": 37, "column": 0}, "map": {"version":3,"sources":["file:///C:/Users/kulji/Downloads/campus%20gpt/my-app/app/api/chat/route.ts"],"sourcesContent":["import { google } from \"@ai-sdk/google\";\nimport { convertToModelMessages, streamText } from \"ai\";\nexport const maxDuration = 30;\nexport async function POST(req: Request) {\n  const { messages } = await req.json();\n  const result = streamText({\n    model: google(\"gemini-2.0-flash\"),\n    messages: convertToModelMessages(messages),\n  });\n  return result.toUIMessageStreamResponse();\n}"],"names":[],"mappings":";;;;;;AAAA;AACA;;;AACO,MAAM,cAAc;AACpB,eAAe,KAAK,GAAY;IACrC,MAAM,EAAE,QAAQ,EAAE,GAAG,MAAM,IAAI,IAAI;IACnC,MAAM,SAAS,IAAA,oKAAU,EAAC;QACxB,OAAO,IAAA,mKAAM,EAAC;QACd,UAAU,IAAA,gLAAsB,EAAC;IACnC;IACA,OAAO,OAAO,yBAAyB;AACzC","debugId":null}}]
+}
