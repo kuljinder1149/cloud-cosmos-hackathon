@@ -49,16 +49,20 @@ cloud-cosmos-hackathon-main/
 │   ├── assistant.tsx       # Chat interface component
 │   └── api/chat/route.ts   # API endpoint for chat messages
 │
+
 ├── components/             # UI and chat-specific components
 │   ├── assistant-ui/       # Chat threads, message rendering, attachments
 │   └── ui/                 # Generic UI elements (button, dialog, input, etc.)
 │
+
 ├── hooks/                  # Custom React hooks
 │   └── use-mobile.ts       # Detects mobile/responsive layout
 │
+
 ├── lib/                    # Utilities and helper functions
 │   └── utils.ts
 │
+
 ├── next.config.ts          # Next.js configuration
 ├── tsconfig.json           # TypeScript configuration
 └── README.md               # Project documentation
